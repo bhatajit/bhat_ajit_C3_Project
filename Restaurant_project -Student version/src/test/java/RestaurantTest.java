@@ -80,7 +80,7 @@ class RestaurantTest {
         itemNames.add("Sweet corn soup");
         itemNames.add("Vegetable lasagne");
 
-
+        int orderValue = restaurant.getOrderValue(itemNames);
         assertEquals(388, orderValue);
 
     }
