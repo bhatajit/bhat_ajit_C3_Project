@@ -5,6 +5,8 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -68,4 +70,19 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //<<<<<<<<<<<<<<<<<<<<<< For Part 3 (TDD)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+
+    public void total_order_value_for_SweetCornSoup_and_VegetableLasagne_equals_388() {
+
+        List<String> itemNames = new ArrayList<>();
+        itemNames.add("Sweet corn soup");
+        itemNames.add("Vegetable lasagne");
+
+
+        assertEquals(388, orderValue);
+
+    }
+
 }
